@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+let time=new Date().toLocaleTimeString()
+let e=(
+    <div>
+        <h1>helloworld</h1>
+        <h2>{time}</h2>
+    </div>
+)
+let men='发烧'
+let e2=(<div>
+    <h1>{
+        man=="发热"?'隔离':'安全'
+    }</h1>
+</div>)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(e2,document.getElementById('root')
+
+)
